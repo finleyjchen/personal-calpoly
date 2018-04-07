@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Source+Sans+Pro:300,300i,400,600,700");
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  font-family: "Source Sans Pro";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab";
+}
+
+p {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.header-wrapper {
+  border-bottom: 1px solid black;
+  margin: 2em 0;
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
+.header-logo {
+  float: left;
+  width: 30%;
+}
+
+.header-logo a {
+  color: black;
+  transition: 0.8s ease-out;
+}
+
+.header-logo a:hover {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+.header-links {
+  float: right;
+}
+
+.header-link {
+  font-size: 1.5em;
+  color: #6c757d;
+  margin-left: 8px;
+  font-weight: 300;
+  font-family: "Roboto Slab";
+}
+
+a.header-link:hover {
+  color: #6c757d;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  .header-logo {
+    width: 100%;
+  }
+  .header-logo h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .header-links {
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+  }
+  .header-link {
+    font-size: 1em;
+  }
+}
+
+.syllabus {
+  width: 100%;
+}
+
+.syllabus iframe {
+  width: 100%;
+  height: 800px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+#syll1 {
+  display: none;
+}
+
+.syllabus-button {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 0.6em;
+  color: black;
+  background-color: white;
+  transition: 0.4s ease-out;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.syllabus-button:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 570px) {
+  .syllabus-button {
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: black;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 1em;
+  transition: 0.3s ease-out;
+}
+
+.card:hover {
+  background-color: black;
+  color: white;
+}
+
+#noteseditor {
+  padding: 1em 2em;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+/*# sourceMappingURL=style.css.map */

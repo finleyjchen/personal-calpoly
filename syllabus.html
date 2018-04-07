@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Reference | Finley Chen</title>
+  <meta name="description" content="A reference page for my personal use">
+  <meta name="author" content="Finley Chen">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
+</head>
+
+<body>
+        <header>
+                <div class="header-wrapper">
+                        <div class="header-logo"><a href="index.html"><h1>calpoly.fjchen.net</h1></a></div>
+                        <div class="header-links">
+                                <a href="http://blog.fjchen.net" class="header-link">blog.fjchen.net</a>
+                    
+                                <a href="about.html" class="header-link">about project</a>
+                        </div>
+                </div>
+</header>
+  <div class="container main">
+      <div class="row">
+          <div class="col-12"> 
+                <h2 class="center">syllabi viewer</h2>
+          </div>
+          <div class="col-sm-4 center">
+                <h3 class="light">POLS 230</h3>
+                <form>
+                        <input class="syllabus-button" type="button" onclick="showSyll1()" value="View Syllabus" />
+                </form> 
+                <a href="https://polylearn.calpoly.edu/AY_2017-2018/course/view.php?id=15004" class="syllabus-button">PolyLearn</a>
+          </div>
+          <div class="col-sm-4 center">
+                <h3 class="light">PHIL 126</h3>
+                <form>
+                        <input class="syllabus-button" type="button" onclick="showSyll2()" value="View Syllabus" />
+                </form> 
+                <a href="https://polylearn.calpoly.edu/AY_2017-2018/course/view.php?id=17572" class="syllabus-button">PolyLearn</a>
+          </div>
+          <div class="col-sm-4 center">
+                <h3 class="light">ANT 201</h3>
+                <form>
+                        <input class="syllabus-button" type="button" onclick="showSyll3()" value="View Syllabus" />
+                </form> 
+                <a href="https://polylearn.calpoly.edu/AY_2017-2018/course/view.php?id=15222" class="syllabus-button">PolyLearn</a>
+          </div>
+
+      </div>
+
+      <div class="row syllabus-wrap">
+          <div class="col-12">
+
+              <hr> 
+                <div class="syllabus" id="syll1" style="display:none;">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQJqYuFQZbinUnQUgXGc_kK4x3oFSS0MR1yasqt04jiyW2vIZB4FrqhQYP1F6xHNnBzgdUtU3KXRSa5/pub?embedded=true"></iframe>
+                 </div>
+
+                <div class="syllabus" id="syll2" style="display:none;">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSVloUCepnW6i13aoBtfpY3DcUaZtkVk5pUaAuao6FcmZdeKru1EK1PKn0-uw33vv9utcGRaZ1d_S8Y/pub?embedded=true"></iframe>
+                </div>
+
+                <div class="syllabus" id="syll3" style="display:none;">
+                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTS2XVZnxEoLHZHhVU83BEGGsFe9Mg4emWLvrn9ymk_VoTt0LcXOphJD0OX6s8Nyls2J1019DcwIiBx/pub?embedded=true"></iframe>                </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="scripts.js"></script> 
+</body>
+</html>
